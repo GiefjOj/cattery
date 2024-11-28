@@ -1,0 +1,72 @@
+body {
+  background-color: #d8bcb6;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%; /* потом поправить, добавить перенос слов */
+  color: white;
+}
+
+.container {
+  background-color: #f5dcd680;
+  padding: 10px; /* отступы внутренние */
+  margin: 10px; /* отступы внешние */
+  height: 95%;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 10px; /* отступы внешние */
+}
+
+button {
+  background-color: #d6bbb6;
+  color: white;
+  width: 100%;
+  float: left;
+  padding: 10px 24px; /* отступы внутренние */
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  opacity: 1; /* прозрачность начальная */
+  transition: 0.3s; /* анимация при изменении состояния кнопочьки */
+  font-size: medium;
+}
+
+button:hover {
+  opacity: 0.5; /* прозрачность после приближ курсора */
+}
+/* это чтобы анимация */
+
+.text-field {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.text-field__input:focus {
+  border-color: #d6bbb6;
+  outline: 0;
+  box-shadow: 0 0 0 5px #d6bbb6;
+}
+
+.text-field__input {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #d6bbb6;
+  background-clip: padding-box;
+  border: 1px solid #d6bbb6;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 15%;
+}
+
+.text-field__input::placeholder {
+  color: white;
+}
+
+.register_button {
+  width: 30%;
+}
