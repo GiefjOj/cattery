@@ -2,37 +2,40 @@
 <html>
  <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вход</title>
-   <!-- <script src=...></script> -->
-   <link rel="stylesheet" href="style/style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  </head>
  <body>
     <div class="container">
     <header>
       <h1>Cattery.ru</h1>
         <nav class="button-container">
-          <button onclick="location.href='index.html'">Главная</button>
-          <button onclick="location.href='about_us.html'">О нас</button>
-          <button onclick="location.href='register.html'">Регистрация</button>
-          <button onclick="location.href='login.html'">Вход</button>
+          <button class="nav_button" onclick="location.href='index.html'">Главная</button>
+          <button class="nav_button" onclick="location.href='about_us.html'">О нас</button>
+          <button class="nav_button" onclick="location.href='register.html'">Регистрация</button>
+          <button class="nav_button" onclick="location.href='login.html'">Вход</button>
         </nav>
     </header>
         <h3>Вход</h3>
-        <p>Введите имя пользователя или почту:</p>
-        <div class="text-field">
-          <input class="text-field__input" placeholder="Логин" />
-        </div>
-        <p>Введите пароль:</p>
-      <div class="text-field">
-        <input class="text-field__input" type="password" placeholder="Пароль" />
-      </div>
-      <div class="login_button">
-        <button onclick="location.href='index_2.html'">
+        <form id="loginForm">
+          <p>Введите имя пользователя или почту:</p>
+          <div class="text-field">
+            <input class="text-field__input" id="loginUsername" type="text" placeholder="Логин" autocomplete="off" required>
+          </div>
+          <p>Введите пароль:</p>
+          <div class="text-field">
+            <input class="text-field__input" id="loginPassword" type="password" placeholder="Пароль" autocomplete="off" required>
+          </div>
+            <button type="submit">
           Войти!
-        </button>
-      </div>
+            </button>
+        </form>
     </div>
+
+<script src="scripts/login.js"></script>
  </body>
 <footer>@red1ska 2024</footer>
 </html>

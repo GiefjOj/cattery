@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Чат</title>
-    <!-- <script src=...></script> -->
     <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,15 +13,21 @@
     <div id="111" class="container">
       <header><h1>Cattery.ru</h1>
       <nav class="button-container">
-        <button onclick="location.href='index_2.html'">Мой питомник</button>
-        <button onclick="location.href='about_game.html'">Обучение</button>
-        <button onclick="location.href='chat.html'">Чат</button>
-        <button onclick="location.href='logout.html'">Выход</button>
+        <button class="nav_button" onclick="location.href='index_2.html'">Мой питомник</button>
+        <button class="nav_button" onclick="location.href='about_game.html'">Обучение</button>
+        <button class="nav_button" onclick="location.href='chat.html'">Чат</button>
+        <button class="nav_button" onclick="logout()">Выход</button>
       </nav>
       </header>
       <h2>Чат</h2>
-      <p>бенк</p>
+      <div class="chat">
+      <div class="chat-box" id="chat-box"></div>
+      <input class="text-field__input chat_input" type="text" id="input-message" placeholder="Напишите сообщение..." />
+      <button id="send-message">Отправить</button>
+      </div>
     </div>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/logout.js" defer></script>
   </body>
   <footer>@red1ska 2024</footer>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой питомец</title>
+    <!-- <script src=...></script> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Cattery.ru</h1>
+        <nav class="button-container">
+          <button class="nav_button" onclick="location.href='index_2.html'">Мой питомник</button>
+          <button class="nav_button" onclick="location.href='about_game.html'">Обучение</button>
+          <button class="nav_button" onclick="location.href='chat.html'">Чат</button>
+          <button class="nav_button" onclick="logout()">Выход</button>
+        </nav>
+      </header>
+      <div class="ALL_elements_cat-profile">
+        <div class="cat-profile_container_left">
+            <h3>Действия:</h3>
+            <p>любить</p>
+            <p>обнимать</p>
+            <p>играть</p>
+        </div>
+
+        <div class="cat-profile_container_center">
+          <div class="cat-profile" id="cat-profile"></div>
+        </div>
+
+        <div class="cat-profile_container_left">
+
+            <h3>Навыки:</h3>
+            <p>крутость: 80 лвл</p>
+            <p>острота коготочков: 100 лвл</p>
+            <p>красота: 999 лвл</p>
+
+            <h3>Параметры:</h3>
+            <p>счастье: 30/100</p>
+            <p>голод: 100/100</p>
+        
+        </div>
+        <button class="back-btn" onclick="location.href='index_2.html'">
+          Назад в питомник
+        </button>
+      </div>
+    </div>
+        <script src="scripts/cat_profile.js" defer></script>
+        <script src="scripts/logout.js" defer></script>
+  </body>
+</html>

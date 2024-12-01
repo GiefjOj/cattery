@@ -1,3 +1,9 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header {
   color: white;
   word-break: break-all;
@@ -9,14 +15,14 @@ footer {
   left: 0;
   bottom: 5px;
   font-size: small;
+  position: static;
+
 }
 
 body {
   background-color: #d8bcb6;
-  font-family: "Montserrat", sans-serif;
   word-break: normal;
   color: #403039;
-  word-break: break-all;
 }
 
 .container {
@@ -26,8 +32,7 @@ body {
   color: #403039;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-
+  width: 50%;
 }
 
 .button-container {
@@ -35,12 +40,18 @@ body {
   grid-template-columns: auto auto auto auto;
   margin: 10px; /* отступы внешние */
   color: #403039;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_button {
+  width: 100%;
 }
 
 button {
   background-color: #d6bbb6;
-  width: 100%;
-  padding: 10px 24px; /* отступы внутренние */
+  width: 50%;
+  padding: 10px; /* отступы внутренние */
   text-align: center;
   cursor: pointer;
   border: none;
@@ -67,33 +78,22 @@ button:hover {
 }
 
 .text-field__input {
-  padding: 10px;
   background-color: #d6bbb6;
   background-clip: padding-box;
   border: 1px solid #d6bbb6;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .text-field__input::placeholder {
   width: 100%;
 }
 
-.register_button {
-  width: 50%;
-}
-
-.login_button {
-  width: 50%;
-}
-
 .game_description {
   display: block;
-}
-
-.submit_add_cat {
-  width: 30%;
-  margin-top: 20px;
 }
 
 .catbreeds_input {
@@ -112,4 +112,65 @@ button:hover {
   border-color: #d6bbb6;
   outline: 0;
   box-shadow: 0 0 0 5px #d6bbb6;
+}
+
+.cat-container { 
+  display: flex; 
+}
+
+.cat-card {  
+  padding: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #d6bbb6;
+  width: 200px; 
+  text-align: center; 
+}
+
+.cat-card img { 
+  width: 100%; 
+  border-radius: 5px; 
+}
+
+.cat-profile img { 
+  width: 60%; 
+}
+
+.cat-profile_container_center {
+  text-align: center;
+}
+
+.ALL_elements_cat-profile {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.chat-box {
+  padding: 10px; 
+  background-color: #d6bbb6;
+  width: 90%; 
+}
+
+.chat-box div {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+.chat_input {
+  width: 90%; 
+}
+
+.chat {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addcat_button {
+  width: 100%; 
 }

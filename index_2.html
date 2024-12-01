@@ -9,23 +9,23 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="scripts/script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header><h1>Cattery.ru</h1>
       <nav class="button-container">
-        <button onclick="location.href='index_2.html'">Мой питомник</button>
-        <button onclick="location.href='about_game.html'">Обучение</button>
-        <button onclick="location.href='chat.html'">Чат</button>
-        <button onclick="location.href='logout.html'">Выход</button>
+        <button class="nav_button" onclick="location.href='index_2.html'">Мой питомник</button>
+        <button class="nav_button" onclick="location.href='about_game.html'">Обучение</button>
+        <button class="nav_button" onclick="location.href='chat.html'">Чат</button>
+        <button class="nav_button" onclick="logout()">Выход</button>
       </nav></header>
       <h3>Мой питомник</h3>
       <button class="addcat_button" onclick="location.href='add_cat.html'">Добавить питомца</button>
-      <div class="catsList">
-        <!-- Здесь будут отображаться питомцы -->
-      </div>
+      <div class="cat-container" id="cat-container"></div>
     </div>
+
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/logout.js" defer></script>
   </body>
   <footer>@red1ska 2024</footer>
 </html>
