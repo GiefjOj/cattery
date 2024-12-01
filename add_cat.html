@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Добавление котика</title>
+   <!-- <script src=...></script> -->
+   <link rel="stylesheet" href="style/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <script src="script.js" defer></script>
+</head>
+ <body>
+    <div class="container">
+        <header><h1>Cattery.ru</h1>
+        <nav class="button-container">
+            <button onclick="location.href='index_2.html'">Мой питомник</button>
+            <button onclick="location.href='about_game.html'">Обучение</button>
+            <button onclick="location.href='chat.html'">Чат</button>
+            <button onclick="location.href='logout.html'">Выход</button>
+        </nav>
+        </header>
+        <h1>Добавить нового питомца</h1>
+        <form id="addcat">
+            <div class="text-field">
+                <label for="catName">Имя питомца:</label>
+                <input class="text-field__input" type="text" id="catName" required>
+            </div>
+            <div>
+                <label for="catBreed">Порода:</label>
+                <select class="catbreeds_input" id="catbreeds" name="Breeds">
+                    <option value="siamese">Сиамская</option>
+                    <option value="british">Британская</option>
+                    <option value="prikol">Смешнявка</option>
+                  </select>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="catImage" value="images/1.png" required>
+                    <img src="images/1.png" alt="Cat 1" style="width: 100px;">
+                </label>
+                <label>
+                    <input type="radio" name="catImage" value="images/1.png">
+                    <img src="images/2.png" alt="Cat 2" style="width: 100px;">
+                </label>
+                <label>
+                    <input type="radio" name="catImage" value="images/1.png">
+                    <img src="images/3.png" alt="Cat 3" style="width: 100px;">
+                </label>
+            </div>
+            <div><button class="submit_add_cat" type="submit">Готово</button></div>
+        </form>
+    </div>
+</body>
+<footer>@red1ska 2024</footer>
+</html>

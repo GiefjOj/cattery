@@ -1,32 +1,45 @@
+header {
+  color: white;
+  word-break: break-all;
+}
+
+footer {
+  color: white;
+  text-align: center; 
+  left: 0;
+  bottom: 5px;
+  font-size: small;
+}
+
 body {
   background-color: #d8bcb6;
   font-family: "Montserrat", sans-serif;
-  display: grid;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%; /* потом поправить, добавить перенос слов */
-  color: white;
+  word-break: normal;
+  color: #403039;
+  word-break: break-all;
 }
 
 .container {
   background-color: #f5dcd680;
-  padding: 10px; /* отступы внутренние */
+  padding: 30px; /* отступы внутренние */
   margin: 10px; /* отступы внешние */
-  height: 95%;
+  color: #403039;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
 }
 
 .button-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin: 10px; /* отступы внешние */
+  color: #403039;
 }
 
 button {
   background-color: #d6bbb6;
-  color: white;
   width: 100%;
-  float: left;
   padding: 10px 24px; /* отступы внутренние */
   text-align: center;
   cursor: pointer;
@@ -34,10 +47,11 @@ button {
   opacity: 1; /* прозрачность начальная */
   transition: 0.3s; /* анимация при изменении состояния кнопочьки */
   font-size: medium;
+  color: #403039;
 }
 
 button:hover {
-  opacity: 0.5; /* прозрачность после приближ курсора */
+  opacity: 0.6; /* прозрачность после приближ курсора */
 }
 /* это чтобы анимация */
 
@@ -49,24 +63,53 @@ button:hover {
 .text-field__input:focus {
   border-color: #d6bbb6;
   outline: 0;
-  box-shadow: 0 0 0 5px #d6bbb6;
+  box-shadow: 0 0 0 2px #d6bbb6;
 }
 
 .text-field__input {
-  display: block;
   padding: 10px;
-  color: white;
   background-color: #d6bbb6;
   background-clip: padding-box;
   border: 1px solid #d6bbb6;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  width: 15%;
+  width: 30%;
 }
 
 .text-field__input::placeholder {
-  color: white;
+  width: 100%;
 }
 
 .register_button {
+  width: 50%;
+}
+
+.login_button {
+  width: 50%;
+}
+
+.game_description {
+  display: block;
+}
+
+.submit_add_cat {
   width: 30%;
+  margin-top: 20px;
+}
+
+.catbreeds_input {
+  display: block;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #d6bbb6;
+  background-clip: padding-box;
+  border: 1px solid #d6bbb6;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 30%;
+}
+
+.catbreeds_input:focus {
+  border-color: #d6bbb6;
+  outline: 0;
+  box-shadow: 0 0 0 5px #d6bbb6;
 }

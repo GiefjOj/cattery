@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Главная страница</title>
+    <title>Регистрация</title>
     <!-- <script src=...></script> -->
     <link rel="stylesheet" href="style/style.css" />
     <link
@@ -11,22 +11,24 @@
     />
   </head>
   <body>
-    <div id="111" class="container">
-      <h1>Cattery.ru</h1>
-      <nav class="button-container">
-        <button onclick="location.href='index.html'">Главная</button>
-        <button onclick="location.href='#about-us'">О нас</button>
-        <button onclick="location.href='register.html'">Регистрация</button>
-        <button onclick="location.href='#login'">Вход</button>
-      </nav>
-      <h2>Регистрация</h2>
+    <div class="container">
+      <header>
+        <h1>Cattery.ru</h1>
+        <nav class="button-container">
+          <button onclick="location.href='index.html'">Главная</button>
+          <button onclick="location.href='about_us.html'">О нас</button>
+          <button onclick="location.href='register.html'">Регистрация</button>
+          <button onclick="location.href='login.html'">Вход</button>
+        </nav>
+      </header>
+      <h3>Регистрация</h3>
       <p>Введите имя пользователя:</p>
       <div class="text-field">
-        <input class="text-field__input" placeholder="Login" />
+        <input class="text-field__input" placeholder="Логин" />
       </div>
       <p>Введите электронную почту:</p>
       <div class="text-field">
-        <input class="text-field__input" type="email" placeholder="Email" />
+        <input class="text-field__input" type="email" placeholder="Почта" />
       </div>
       <p>Введите пароль:</p>
       <div class="text-field">
@@ -37,8 +39,11 @@
         <input class="text-field__input" type="date" />
       </div>
       <div class="register_button">
-        <button onclick="location.href='index.html'">Зарегистрироваться!</button>
+        <button onclick="location.href='index_2.html'">
+          Зарегистрироваться!
+        </button>
       </div>
     </div>
   </body>
+  <footer>@red1ska 2024</footer>
 </html>
